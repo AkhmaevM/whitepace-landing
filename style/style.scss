@@ -1,5 +1,16 @@
 @import 'variables';
 
-html{
-    font-family: $main-font;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: $main-font;
+	font-size: 16px;
+
+    background-color: $white;
 }
