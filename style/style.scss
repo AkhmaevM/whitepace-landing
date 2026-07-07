@@ -12,5 +12,16 @@ html {
 	font-family: $main-font;
 	font-size: 16px;
 
-    background-color: $white;
+	background-color: $white;
 }
+
+.container {
+	margin-left: 13.75rem;
+	margin-right: 13.75rem;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+@import 'header';

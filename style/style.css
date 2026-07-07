@@ -10,4 +10,80 @@ html {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   background-color: #fff;
+}
+
+.container {
+  margin-left: 13.75rem;
+  margin-right: 13.75rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 1.6rem;
+       column-gap: 1.6rem;
+}
+.header__logo-name {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #4F9CF9;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  color: #4F9CF9;
+}
+.header__list-item {
+  text-decoration: none;
+  list-style-type: none;
+}
+.header__list-item:hover {
+  cursor: pointer;
+}
+.header__btns {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.header__btn--primary {
+  padding: 1.15rem 2.5rem;
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 128%;
+  letter-spacing: -0.02em;
+  color: #212529;
+  background-color: #FFE492;
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+  border: 0;
+}
+.header__btn {
+  padding: 1.15rem 2.5rem;
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 128%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  background-color: #4F9CF9;
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+  border: 0;
 }/*# sourceMappingURL=style.css.map */

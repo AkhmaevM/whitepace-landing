@@ -1,17 +1,22 @@
 .header {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 
 	&__logo {
 		display: flex;
 		flex-direction: row;
-
-		column-gap: 0.6rem;
+		align-items: center;
+		column-gap: 1.6rem;
 
 		&-name {
 			font-weight: 700;
 			font-size: 1.75rem;
-			color: $Light-primary;
+			color: $light-primary;
 		}
 	}
 
@@ -19,14 +24,57 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		column-gap: 0.5rem;
+		list-style-type: none;
+		column-gap: 2rem;
 		color: $light-primary;
+
+		&-item {
+			text-decoration: none;
+			list-style-type: none;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
 	}
 
-    &__item{
-        text-decoration: none;
-        list-style-type: none;
-    }
+	&__btns {
+		display: flex;
+		flex-direction: row;
+		column-gap: 1.5rem;
+	}
 
-    
+	&__btn--primary {
+		padding: 1.15rem 2.5rem;
+
+		font-weight: 500;
+		font-size: 1.15rem;
+		line-height: 128%;
+		letter-spacing: -0.02em;
+		color: $dark-blue;
+		background-color: $light-yellow;
+
+		border-radius: 0.5rem;
+		padding: 1rem 2.5rem;
+		// width: 126px;
+		// height: 60px;
+		border: 0;
+	}
+
+	&__btn {
+		padding: 1.15rem 2.5rem;
+
+		font-weight: 500;
+		font-size: 1.15rem;
+		line-height: 128%;
+		letter-spacing: -0.02em;
+		color: $white;
+		background-color: $light-primary;
+
+		border-radius: 0.5rem;
+		padding: 1rem 2.5rem;
+		// width: 126px;
+		// height: 60px;
+		border: 0;
+	}
 }
