@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'ui';
 
 *,
 *::before,
@@ -11,7 +12,7 @@
 html {
 	font-family: $main-font;
 	font-size: 16px;
-
+	color: $dark-blue;
 	background-color: $white;
 }
 
@@ -20,8 +21,41 @@ html {
 	margin-right: 13.75rem;
 }
 
-button:hover{
-	cursor: pointer;
+.hero {
+	.section__header,
+	.section__text {
+		color: $light-primary;
+	}
+
+	.section__header {
+		font-size: 4rem;
+	}
+}
+
+.project > img {
+	width: 46.75rem;
+	height: 34.2rem;
+}
+
+.workTogether.section {
+	column-gap: 10rem;
+	.section__info {
+		order: 2;
+		padding: 11.5rem 0;
+	}
+}
+
+.customize {
+	&:img {
+		width: 42.825rem;
+		height: 29.9rem;
+	}
+
+	.section__info {
+		padding: 3.06rem 0;
+	}
 }
 
 @import 'header';
+@import 'section';
+@import 'plans';

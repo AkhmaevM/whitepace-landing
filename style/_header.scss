@@ -1,7 +1,6 @@
 .header {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -18,23 +17,32 @@
 			font-size: 1.75rem;
 			color: $light-primary;
 		}
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	&__list {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		list-style-type: none;
 		column-gap: 2rem;
 		color: $light-primary;
+		margin-top: 1.15px;
+		margin-bottom: 1.15px;
 
 		&-item {
-			text-decoration: none;
-			list-style-type: none;
+			text-align: center;
+		}
 
-			&:hover {
-				cursor: pointer;
-			}
+		&-arrow {
+			width: 0.563rem;
+			height: 0.25rem;
+			margin-top: 0.6rem;
+			margin-bottom: 0.3rem;
+			margin-left: 0.6rem;
+			
 		}
 	}
 
@@ -45,36 +53,7 @@
 	}
 
 	&__btn--primary {
-		padding: 1.15rem 2.5rem;
-
-		font-weight: 500;
-		font-size: 1.15rem;
-		line-height: 128%;
-		letter-spacing: -0.02em;
 		color: $dark-blue;
 		background-color: $light-yellow;
-
-		border-radius: 0.5rem;
-		padding: 1rem 2.5rem;
-		// width: 126px;
-		// height: 60px;
-		border: 0;
-	}
-
-	&__btn {
-		padding: 1.15rem 2.5rem;
-
-		font-weight: 500;
-		font-size: 1.15rem;
-		line-height: 128%;
-		letter-spacing: -0.02em;
-		color: $white;
-		background-color: $light-primary;
-
-		border-radius: 0.5rem;
-		padding: 1rem 2.5rem;
-		// width: 126px;
-		// height: 60px;
-		border: 0;
 	}
 }

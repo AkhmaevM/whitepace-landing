@@ -1,0 +1,115 @@
+.plans {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 3.75rem;
+	margin-bottom: 8.75rem;
+
+	&__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 1.5rem;
+	}
+
+	&__header {
+		font-weight: 700;
+		font-size: 4.5rem;
+		letter-spacing: -0.02em;
+		text-align: center;
+	}
+
+	&__info {
+		font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 167%;
+		letter-spacing: -0.02em;
+		text-align: center;
+		max-width: 61.2rem;
+	}
+
+	&__cards {
+		display: flex;
+		flex-direction: row;
+		padding: 3.9rem 0;
+		column-gap: 2rem;
+	}
+
+	&__card {
+		padding: 2.5rem 2.75rem;
+		min-width: 29.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border: 0.0625rem solid $light-yellow;
+		border-radius: 0.625rem;
+
+		transition:
+			transform 0.3s ease,
+			box-shadow 0.3s ease;
+
+		&:hover {
+			color: $primary;
+			cursor: pointer;
+
+			transform: translateY(-10px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+			border-color: $light-primary;
+
+			button {
+				background-color: $light-primary;
+				border: 0;
+				color: white;
+			}
+		}
+
+		&-name {
+			font-weight: 600;
+			font-size: 1.5rem;
+			line-height: 150%;
+			margin-bottom: 1.6rem;
+		}
+
+		&-cost {
+			font-weight: 700;
+			font-size: 2rem;
+			letter-spacing: -0.02em;
+		}
+
+		&-text {
+			font-size: 1.3rem;
+			line-height: 128%;
+			letter-spacing: -0.02em;
+			margin: 1.66rem 0;
+		}
+
+		&-info {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1.75rem;
+
+			& > li {
+				font-weight: 400;
+				font-size: 1rem;
+				line-height: 125%;
+				letter-spacing: -0.02em;
+
+				& > img {
+					width: 1.126rem;
+					height: 1.126rem;
+					margin-right: 1.2rem;
+				}
+			}
+		}
+
+		&-btn {
+			background-color: white;
+			border: 0.0625rem solid $light-yellow;
+			border-radius: 0.5rem;
+			margin: 1.66rem 0 2.5rem;
+			width: 11rem;
+			height: 3.1875rem;
+			color: $dark-blue;
+		}
+	}
+}

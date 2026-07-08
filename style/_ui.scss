@@ -1,0 +1,32 @@
+button {
+	padding: 1.15rem 2.5rem;
+	font-weight: 500;
+	font-size: 1.15rem;
+	line-height: 128%;
+	letter-spacing: -0.02em;
+	color: $white;
+	background-color: $light-primary;
+	border-radius: 0.5rem;
+	padding: 1rem 2.5rem;
+	border: 0;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+li {
+	list-style-type: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn__arrow {
+	margin-left: 0.6rem;
+}
