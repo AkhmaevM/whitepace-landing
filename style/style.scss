@@ -56,6 +56,30 @@ html {
 	}
 }
 
+.data {
+	padding: 1.78rem 0;
+
+	.section__info {
+		padding: 1.5rem 0;
+	}
+}
+
+.favApps {
+	padding: 8.75rem;
+	background-color: $primary;
+	.section__info {
+		order: 2;
+		color: $white;
+	}
+
+	.section__header,
+	.section__text {
+		color: $white;
+	}
+}
+
 @import 'header';
 @import 'section';
 @import 'plans';
+@import 'work';
+@import 'sponsors';

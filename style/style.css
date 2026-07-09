@@ -79,6 +79,26 @@ html {
   padding: 3.06rem 0;
 }
 
+.data {
+  padding: 1.78rem 0;
+}
+.data .section__info {
+  padding: 1.5rem 0;
+}
+
+.favApps {
+  padding: 8.75rem;
+  background-color: #043873;
+}
+.favApps .section__info {
+  order: 2;
+  color: #fff;
+}
+.favApps .section__header,
+.favApps .section__text {
+  color: #fff;
+}
+
 .header {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -264,4 +284,49 @@ html {
   width: 11rem;
   height: 3.1875rem;
   color: #212529;
+}
+
+.work {
+  padding: 8.75rem 13.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #043873;
+}
+.work__header {
+  font-weight: 700;
+  font-size: 4.5rem;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.work__info {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 167%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3.75rem;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8.75rem 0;
+}
+.sponsors__header {
+  font-weight: 700;
+  font-size: 4.5rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #212529;
+  margin-bottom: 6.25rem;
+}
+.sponsors__list {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 13.1rem;
+       column-gap: 13.1rem;
 }/*# sourceMappingURL=style.css.map */

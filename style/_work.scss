@@ -1,0 +1,40 @@
+.work {
+	padding: 8.75rem 13.75rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $primary;
+
+	&__header {
+		font-weight: 700;
+		font-size: 4.5rem;
+		letter-spacing: -0.02em;
+		color: $white;
+		margin-bottom: 1.5rem;
+	}
+
+	&__info {
+		font-weight: 400;
+		font-size: 1.125rem;
+		line-height: 167%;
+		letter-spacing: -0.02em;
+		text-align: center;
+		color: $white;
+
+		margin-bottom: 3.75rem;
+	}
+
+	// &__btn {
+	// 	border-radius: 8px;
+	// 	padding: 20px 40px;
+	// 	width: 195px;
+	// 	height: 63px;
+
+	// 	font-weight: 500;
+	// 	font-size: 18px;
+	// 	line-height: 128%;
+	// 	letter-spacing: -0.02em;
+	// 	color: #fff;
+	// }
+}
