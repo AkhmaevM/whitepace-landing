@@ -1,0 +1,104 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.75rem;
+    align-items: center;
+
+    &__header {
+        font-weight: 700;
+        font-size: 4.375rem;
+        line-height: 120%;
+        text-align: center;
+        color: $dark-blue;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 29.4375rem;
+
+        border-radius: 0.625;
+        padding: 3.75rem 2.5rem;
+        background-color: $light-primary;
+
+        transition:
+            transform 3s ease,
+            box-shadow 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $white;
+            box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+
+            &>.reviews__text,
+            .reviews__author,
+            .reviews__author-name,
+            .reviews__author-position {
+                color: $dark-blue;
+            }
+
+            &>.reviews__text {
+                border-bottom: 1px solid $dark-blue;
+            }
+
+
+        }
+
+    }
+
+    &__icon {
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 167%;
+        letter-spacing: -0.02em;
+        color: $dark-blue;
+        max-width: 24.4375rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid $white;
+        color: $white;
+    }
+
+
+    &__author {
+        margin-top: 3.75rem;
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.625rem;
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.9375rem;
+        }
+
+        &-name {
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 150%;
+            color: $primary;
+        }
+
+        &-position {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 125%;
+            letter-spacing: -0.02em;
+
+            color: $white;
+        }
+
+    }
+
+}
