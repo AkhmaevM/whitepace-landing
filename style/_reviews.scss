@@ -3,6 +3,7 @@
     flex-direction: column;
     row-gap: 3.75rem;
     align-items: center;
+    padding-bottom: 17.1875rem;
 
     &__header {
         font-weight: 700;
@@ -30,13 +31,14 @@
         background-color: $light-primary;
 
         transition:
-            transform 3s ease,
+            transform 0.3s ease,
             box-shadow 0.3s ease;
 
         &:hover {
             cursor: pointer;
             background-color: $white;
             box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+            border: 0.0625rem solid $light-primary;
 
             &>.reviews__text,
             .reviews__author,

@@ -1,0 +1,111 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $primary;
+    padding: 8.75rem 13.75rem 2rem;
+    color: $white;
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 6.25rem;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.625rem;
+        margin-bottom: 0.9375rem;
+        padding-bottom: 6.4375rem;
+
+        &-name {
+            font-weight: 700;
+            font-size: 1.75rem;
+        }
+
+        &-img {
+            width: 2.4375rem;
+            height: 1.8125rem;
+        }
+    }
+
+    &__mission {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 167%;
+        letter-spacing: -0.02em;
+        max-width: 15rem;
+    }
+
+    &__center {
+        display: flex;
+        flex-direction: row;
+
+        column-gap: 6.25rem;
+    }
+
+
+    &__column {
+        &-name {
+            font-weight: 700;
+            font-size: 1.125rem;
+            letter-spacing: -0.02em;
+            padding-bottom: 1rem;
+
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        padding-right: 1.75rem;
+        row-gap: 1rem;
+    }
+
+    &-link {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 125%;
+        letter-spacing: -0.02em;
+    }
+
+
+    &__right {
+        margin-left: 6.25rem;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.4375rem;
+
+        &-header {
+            font-weight: 700;
+            font-size: 1.56rem;
+            line-height: 129%;
+            letter-spacing: -0.02em;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 125%;
+            letter-spacing: -0.02em;
+        }
+
+        &-btn {
+            border-radius: 0.5rem;
+            padding: 1.25rem 2.5rem;
+            width: 11.625rem;
+            height: 3.75rem;
+        }
+    }
+
+}

@@ -336,6 +336,7 @@ html {
   flex-direction: column;
   row-gap: 3.75rem;
   align-items: center;
+  padding-bottom: 17.1875rem;
 }
 .reviews__header {
   font-weight: 700;
@@ -358,12 +359,13 @@ html {
   border-radius: 0.625;
   padding: 3.75rem 2.5rem;
   background-color: #4F9CF9;
-  transition: transform 3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .reviews__card:hover {
   cursor: pointer;
   background-color: #fff;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  border: 0.0625rem solid #4F9CF9;
 }
 .reviews__card:hover > .reviews__text,
 .reviews__card:hover .reviews__author,
@@ -412,4 +414,95 @@ html {
   line-height: 125%;
   letter-spacing: -0.02em;
   color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #043873;
+  padding: 8.75rem 13.75rem 2rem;
+  color: #fff;
+}
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 6.25rem;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  margin-bottom: 0.9375rem;
+  padding-bottom: 6.4375rem;
+}
+.footer__logo-name {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+.footer__logo-img {
+  width: 2.4375rem;
+  height: 1.8125rem;
+}
+.footer__mission {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 167%;
+  letter-spacing: -0.02em;
+  max-width: 15rem;
+}
+.footer__center {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 6.25rem;
+       column-gap: 6.25rem;
+}
+.footer__column-name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: -0.02em;
+  padding-bottom: 1rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.75rem;
+  row-gap: 1rem;
+}
+.footer-link {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+}
+.footer__right {
+  margin-left: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4375rem;
+}
+.footer__right-header {
+  font-weight: 700;
+  font-size: 1.56rem;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+}
+.footer__right-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+}
+.footer__right-btn {
+  border-radius: 0.5rem;
+  padding: 1.25rem 2.5rem;
+  width: 11.625rem;
+  height: 3.75rem;
 }/*# sourceMappingURL=style.css.map */

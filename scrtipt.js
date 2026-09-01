@@ -1,7 +1,7 @@
 const sectionImg = document.querySelectorAll('.section__img');
 const sectionBtn = document.querySelectorAll('.section__btn');
 const reviewCard = document.querySelectorAll('.reviews__card');
-const reviewQuote = document.querySelector('.reviews__icon');
+const reviewQuote = document.querySelectorAll('.reviews__icon');
 
 
 
@@ -17,12 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		button.appendChild(btnArrow);
 	})
 
-
 	reviewCard.forEach(card => {
 		card.addEventListener('mouseover', () => {
 			reviewQuote.src = '/images/icons/Quote.svg';
 		})
 	})
+
+	reviewQuote.forEach(icon => {
+		reviewCard.forEach(card => {
+			card.addEventListener('mouseover', () => {
+				icon.src = '/images/icons/Quote.svg';
+			})
+		})
+	})
+
+	
+
 	// reviewCard.addEventListener('onMouse', () => {
 	// 	reviewQuote.src = '/images/icons/Quote.svg';
 	// })
