@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     background: $primary;
     padding: 8.75rem 13.75rem 2rem;
     color: $white;
@@ -10,6 +10,11 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        justify-content: space-between;
+
+        border-bottom: 0.0625rem solid #2e4e73;
+        padding-bottom: 4.1875rem;
+        margin-bottom: 2rem;
     }
 
 
@@ -108,4 +113,42 @@
         }
     }
 
+
+
+    // bottom section
+
+    &__bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 39.875rem;
+    }
+
+    &__tech {
+        display: flex;
+        flex-direction: row;
+        column-gap: 3.75rem;
+        align-items: center;
+
+        &-item {
+            &>a {
+
+                text-decoration: none;
+                color: $white;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 125%;
+                letter-spacing: -0.02em;
+            }
+        }
+
+
+    }
+
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2rem;
+    }
 }

@@ -419,7 +419,7 @@ html {
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   background: #043873;
   padding: 8.75rem 13.75rem 2rem;
   color: #fff;
@@ -428,6 +428,10 @@ html {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid #2e4e73;
+  padding-bottom: 4.1875rem;
+  margin-bottom: 2rem;
 }
 .footer__left {
   display: flex;
@@ -505,4 +509,32 @@ html {
   padding: 1.25rem 2.5rem;
   width: 11.625rem;
   height: 3.75rem;
+}
+.footer__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -moz-column-gap: 39.875rem;
+       column-gap: 39.875rem;
+}
+.footer__tech {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 3.75rem;
+       column-gap: 3.75rem;
+  align-items: center;
+}
+.footer__tech-item > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+}
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }/*# sourceMappingURL=style.css.map */
