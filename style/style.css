@@ -44,6 +44,12 @@ html {
   background-color: #fff;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container {
   margin-left: 13.75rem;
   margin-right: 13.75rem;
@@ -181,7 +187,7 @@ html {
   letter-spacing: -0.02em;
   color: #212529;
   margin-top: 1.5rem;
-  max-width: 42rem;
+  max-width: 50rem;
 }
 .section__btn {
   margin-top: 3.75rem;
@@ -292,6 +298,7 @@ html {
   flex-direction: column;
   align-items: center;
   background-color: #043873;
+  width: 100vw;
 }
 .work__header {
   font-weight: 700;
@@ -299,6 +306,7 @@ html {
   letter-spacing: -0.02em;
   color: #fff;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 .work__info {
   font-weight: 400;
@@ -308,6 +316,7 @@ html {
   text-align: center;
   color: #fff;
   margin-bottom: 3.75rem;
+  max-width: 66.5rem;
 }
 
 .sponsors {
@@ -327,8 +336,21 @@ html {
 .sponsors__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   -moz-column-gap: 13.1rem;
        column-gap: 13.1rem;
+  width: 90vw;
+}
+
+.favApps {
+  width: 100vw;
+  justify-content: center;
+  -moz-column-gap: 8.25rem;
+       column-gap: 8.25rem;
+}
+
+.favApps h2 {
+  max-width: 50rem;
 }
 
 .reviews {
@@ -419,7 +441,7 @@ html {
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   background: #043873;
   padding: 8.75rem 13.75rem 2rem;
   color: #fff;
@@ -432,6 +454,7 @@ html {
   border-bottom: 0.0625rem solid #2e4e73;
   padding-bottom: 4.1875rem;
   margin-bottom: 2rem;
+  width: 92.5rem;
 }
 .footer__left {
   display: flex;
@@ -516,12 +539,13 @@ html {
   justify-content: space-between;
   -moz-column-gap: 39.875rem;
        column-gap: 39.875rem;
+  max-width: 120rem;
 }
 .footer__tech {
   display: flex;
   flex-direction: row;
-  -moz-column-gap: 3.75rem;
-       column-gap: 3.75rem;
+  flex-wrap: wrap;
+  gap: 3.75rem;
   align-items: center;
 }
 .footer__tech-item > a {
@@ -531,6 +555,7 @@ html {
   font-size: 1rem;
   line-height: 125%;
   letter-spacing: -0.02em;
+  min-width: 6.875rem;
 }
 .footer__social {
   display: flex;
